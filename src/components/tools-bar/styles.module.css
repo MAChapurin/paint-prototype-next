@@ -1,0 +1,16 @@
+.toolbar {
+	display: flex;
+	align-items: center;
+	/* justify-content: space-between; */
+	margin-bottom: 10px;
+}
+
+.color {
+	margin-left: 10px;
+	margin-right: auto;
+	background-color: transparent;
+	width: 56px;
+	height: 36px;
+	border-radius: 10px;
+	overflow: hidden;
+}
