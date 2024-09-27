@@ -2,7 +2,7 @@
 
 import { observer } from 'mobx-react-lite'
 import { useEffect, useRef } from 'react'
-import canvasState from '@/store/canvasState'
+// import canvasState from '@/store/canvasState'
 import styles from './styles.module.css'
 // import toolState from '@/store/toolState'
 // import Brush from '@/tools/Brush'
@@ -12,7 +12,7 @@ export const Canvas = observer(() => {
   useEffect(() => {
     const canvasNode = canvasRef.current
     if (canvasNode) {
-      canvasState.setCanvas(canvasNode)
+      // canvasState.setCanvas(canvasNode)
       // toolState.setTool(new Brush(canvasNode as HTMLCanvasElement))
     }
   }, [])
