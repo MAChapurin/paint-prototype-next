@@ -11,13 +11,13 @@ import SaveAsIcon from '@mui/icons-material/SaveAs';
 import { Button, ButtonGroup } from '@mui/material';
 import styles from './styles.module.css';
 import { useState } from 'react';
-import toolState from '@/store/toolState';
-import Brush from '@/tools/Brush';
-import canvasState from '@/store/canvasState';
-import Rectangle from '@/tools/Rectangle';
-import Circle from '@/tools/Circle';
-import Eraser from '@/tools/Eraser';
-import Line from '@/tools/Line';
+// import toolState from '@/store/toolState';
+// import Brush from '@/tools/Brush';
+// import canvasState from '@/store/canvasState';
+// import Rectangle from '@/tools/Rectangle';
+// import Circle from '@/tools/Circle';
+// import Eraser from '@/tools/Eraser';
+// import Line from '@/tools/Line';
 
 export function ToolsBar() {
   const [color, setColor] = useState('#1976d2');
@@ -25,27 +25,27 @@ export function ToolsBar() {
     <div className={styles.toolbar}>
       <ButtonGroup color='primary'>
         <Button onClick={() => {
-          toolState.setTool(new Brush(canvasState.canvas))
+          // toolState.setTool(new Brush(canvasState.canvas))
         }}>
           <BrushIcon />
         </Button>
         <Button onClick={() => {
-          toolState.setTool(new Rectangle(canvasState.canvas))
+          // toolState.setTool(new Rectangle(canvasState.canvas))
         }}>
           <SquareIcon />
         </Button>
         <Button onClick={() => {
-          toolState.setTool(new Circle(canvasState.canvas))
+          // toolState.setTool(new Circle(canvasState.canvas))
         }}>
           <Brightness1Icon />
         </Button>
         <Button onClick={() => {
-          toolState.setTool(new Eraser(canvasState.canvas))
+          // toolState.setTool(new Eraser(canvasState.canvas))
         }}>
           <DeselectIcon />
         </Button>
         <Button onClick={() => {
-          toolState.setTool(new Line(canvasState.canvas))
+          // toolState.setTool(new Line(canvasState.canvas))
         }}>
           <HorizontalRuleIcon />
         </Button>
